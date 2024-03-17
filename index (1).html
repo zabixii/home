@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .search-bar {
+            background-color: #333;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            width: 80%;
+            margin: 20px auto;
+            color: #fff;
+            font-size: 16px;
+        }
+        .shortcut {
+            display: inline-block;
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            padding: 15px;
+            background-color: #333;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .shortcut:hover {
+            background-color: #444;
+        }
+        .shortcut img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" class="search-bar" name="q" placeholder="Search Google">
+        </form>
+        <a href="https://leekduck.com/events/" class="shortcut">
+            <img src="https://leekduck.com/favicon.ico" alt="LeekDuck Events">
+            <div>LeekDuck Events</div>
+        </a>
+        <a href="https://pvpoke.com/rankings/" class="shortcut">
+            <img src="https://github.com/zabixii/home/blob/main/Nimet%C3%B6n(1).png?raw=true" alt="PvPoke Rankings">
+            <div>PvPoke Rankings</div>
+        </a>
+        <a href="https://www.speedtest.net/" class="shortcut">
+            <img src="https://www.speedtest.net/favicon.ico" alt="Speedtest">
+            <div>Speedtest</div>
+        </a>
+        <a href="https://chat.openai.com/" class="shortcut">
+            <img src="https://chat.openai.com/favicon.ico" alt="ChatGPT">
+            <div>ChatGPT</div>
+        </a>
+    </div>
+</body>
+</html>
