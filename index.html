@@ -49,8 +49,8 @@
 </head>
 <body>
     <div class="container">
-        <form action="https://www.google.com/search" method="GET" target="_blank">
-            <input type="text" class="search-bar" name="q" placeholder="Search Google">
+        <form id="searchForm" onsubmit="return submitForm()">
+            <input type="text" id="searchInput" class="search-bar" name="q" placeholder="Search or enter URL">
         </form>
         <a href="https://leekduck.com/events/" class="shortcut">
             <img src="https://i.ibb.co/rG0qn6x/Nimet-n.jpg" alt="LeekDuck Events">
@@ -82,7 +82,9 @@
                         return false; // Prevent the default form submission behavior
                     }
                 }
-                return true; // Assume it's a search query
+                // If none of the endings match, treat it as a search query
+                window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(input);
+                return false; // Prevent the default form submission behavior
             }
         }
     </script>
