@@ -52,24 +52,25 @@
         <form id="searchForm" onsubmit="return submitForm()">
             <input type="text" id="searchInput" class="search-bar" name="q" placeholder="Search or enter URL">
         </form>
-        <a href="https://leekduck.com/events/" class="shortcut">
-            <img src="https://i.ibb.co/rG0qn6x/Nimet-n.jpg" alt="LeekDuck Events">
-            <div>LeekDuck Events</div>
-        </a>
-        <a href="https://pvpoke.com/rankings/" class="shortcut">
-            <img src="https://i.ibb.co/19Lq8xR/Nimet-n-1.png" alt="PvPoke Rankings">
-            <div>PvPoke Rankings</div>
-        </a>
-        <a href="https://www.speedtest.net/" class="shortcut">
-            <img src="https://www.rvmobileinternet.com/wp-content/uploads/2018/02/speedtestbyookla.png" alt="Speedtest">
-            <div>Speedtest</div>
-        </a>
-        <a href="https://chat.openai.com/" class="shortcut">
-            <img src="https://cdn.oaistatic.com/_next/static/media/apple-touch-icon.59f2e898.png" alt="ChatGPT">
-            <div>ChatGPT</div>
-        </a>
+      <a href="https://leekduck.com/events/" class="shortcut">
+          <img src="https://i.ibb.co/rG0qn6x/Nimet-n.jpg" alt="LeekDuck Events">
+          <div>LeekDuck Events</div>
+      </a>
+      <a href="https://pvpoke.com/rankings/" class="shortcut">
+          <img src="https://i.ibb.co/19Lq8xR/Nimet-n-1.png" alt="PvPoke Rankings">
+          <div>PvPoke Rankings</div>
+      </a>
+      <a href="https://www.speedtest.net/" class="shortcut">
+          <img src="https://www.rvmobileinternet.com/wp-content/uploads/2018/02/speedtestbyookla.png" alt="Speedtest">
+          <div>Speedtest</div>
+      </a>
+      <a href="https://chat.openai.com/" class="shortcut">
+          <img src="https://cdn.oaistatic.com/_next/static/media/apple-touch-icon.59f2e898.png" alt="ChatGPT">
+          <div>ChatGPT</div>
+      </a>
     </div>
-      <script>
+
+    <script>
         function submitForm() {
             var input = document.getElementById("searchInput").value.trim().toLowerCase();
             if (input.startsWith("http://") || input.startsWith("https://")) {
