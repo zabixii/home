@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Theme Homepage</title>
+    <title>Homepage</title>
     <style>
         body {
             margin: 0;
@@ -69,5 +69,16 @@
             <div>ChatGPT</div>
         </a>
     </div>
+    <script>
+        function submitForm() {
+            var input = document.getElementById("searchInput").value.trim();
+            if (input.startsWith("http://") || input.startsWith("https://")) {
+                return true; // Go to the entered URL directly
+            } else {
+                window.location.href = "https://" + input; // Assume it's a URL, add https:// and navigate
+                return false; // Prevent the form from submitting
+            }
+        }
+    </script>
 </body>
 </html>
