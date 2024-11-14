@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
+    <title>Opening Campfire Invite...</title>
     <script type="text/javascript">
-        // Use JavaScript to replace the current page in the history stack with the target URL.
         window.onload = function() {
-            window.location.replace("https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPTBhMDg0NzkxLTU2OGUtNDk3NS04YTM2LWI2NzMwMmIzZTFjOCZpPXRydWU=/");
+            // Attempt to open the Campfire app directly with the deep link.
+            window.location.href = "campfire://cj1jbHVicyZjPTBhMDg0NzkxLTU2OGUtNDk3NS04YTM2LWI2NzMwMmIzZTFjOCZpPXRydWU=/";
+
+            // Fallback in case the app doesn't open, redirect to the web invite link.
+            setTimeout(function() {
+                window.location.href = "https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPTBhMDg0NzkxLTU2OGUtNDk3NS04YTM2LWI2NzMwMmIzZTFjOCZpPXRydWU=/";
+            }, 1000); // Adjust delay as needed
         };
     </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPTBhMDg0NzkxLTU2OGUtNDk3NS04YTM2LWI2NzMwMmIzZTFjOCZpPXRydWU=/">click here</a>.</p>
+    <p>Opening the Campfire app...</p>
 </body>
 </html>
